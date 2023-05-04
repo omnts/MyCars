@@ -9,10 +9,11 @@ let package = Package(name: "MyCars",
                                           targets: ["MyCars"])],
                       dependencies: [
                         // Dependencies declare other packages that this package depends on.
-                        // .package(url: /* package url */, from: "1.0.0"),
+                        .package(url: "https://github.com/omnts/MyTools.git", branch: "main"),
                       ],
 
                       targets: [.target(name: "MyCars",
+                                        dependencies: ["MyTools"],
                                         path: "Sources",
                                         exclude: [])],
                       swiftLanguageVersions: [.v5])

@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		FE8BE8742A02C33300D1B20C /* MyCars.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8BE8732A02C33300D1B20C /* MyCars.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEADC0062A02C3D000CB8A9B /* MyCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEADC0052A02C3D000CB8A9B /* MyCars.swift */; };
+		FEC428E12A0395CA0061D03A /* MyTools in Frameworks */ = {isa = PBXBuildFile; productRef = FEC428E02A0395CA0061D03A /* MyTools */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE31760A2A02D74A0057A852 /* MyTools */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyTools; path = ../MyTools; sourceTree = "<group>"; };
 		FE8BE8702A02C33300D1B20C /* MyCars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyCars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8BE8732A02C33300D1B20C /* MyCars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCars.h; sourceTree = "<group>"; };
 		FEADC0052A02C3D000CB8A9B /* MyCars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCars.swift; sourceTree = "<group>"; };
 		FEADC0072A02C3E900CB8A9B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		FEC428DF2A0395780061D03A /* MyTools */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyTools; path = ../MyTools; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,20 +25,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC428E12A0395CA0061D03A /* MyTools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FE3176092A02D74A0057A852 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				FE31760A2A02D74A0057A852 /* MyTools */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		FE31760B2A02D7580057A852 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -48,7 +42,7 @@
 		FE8BE8662A02C33300D1B20C = {
 			isa = PBXGroup;
 			children = (
-				FE3176092A02D74A0057A852 /* Packages */,
+				FEC428DE2A0395780061D03A /* Packages */,
 				FEADC0072A02C3E900CB8A9B /* Package.swift */,
 				FEADC0032A02C3D000CB8A9B /* Sources */,
 				FE8BE8712A02C33300D1B20C /* Products */,
@@ -81,6 +75,14 @@
 			path = MyCars;
 			sourceTree = "<group>";
 		};
+		FEC428DE2A0395780061D03A /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				FEC428DF2A0395780061D03A /* MyTools */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -110,6 +112,7 @@
 			);
 			name = MyCars;
 			packageProductDependencies = (
+				FEC428E02A0395CA0061D03A /* MyTools */,
 			);
 			productName = MyCars;
 			productReference = FE8BE8702A02C33300D1B20C /* MyCars.framework */;
@@ -138,6 +141,8 @@
 				Base,
 			);
 			mainGroup = FE8BE8662A02C33300D1B20C;
+			packageReferences = (
+			);
 			productRefGroup = FE8BE8712A02C33300D1B20C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,6 +377,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEC428E02A0395CA0061D03A /* MyTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyTools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE8BE8672A02C33300D1B20C /* Project object */;
 }

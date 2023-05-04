@@ -14,7 +14,7 @@ open class Car {
         self.model = model
     }
 
-    public func show() {
+    @objc public func show() {
         print("This car is a \(model)")
         let tool = MathsSuitable(range: 5)
         let fact5 = tool.facto(n: 5)

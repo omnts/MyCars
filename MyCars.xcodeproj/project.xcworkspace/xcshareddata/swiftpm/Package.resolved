@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mytools",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/omnts/MyTools",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a1d70c88d428a85d11e3445557e28ed2c4c428f4"
+      }
+    }
+  ],
+  "version" : 2
+}

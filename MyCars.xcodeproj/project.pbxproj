@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE5372B12A039C2E00E2AA89 /* MyTools in Frameworks */ = {isa = PBXBuildFile; productRef = FE5372B02A039C2E00E2AA89 /* MyTools */; };
 		FE8BE8742A02C33300D1B20C /* MyCars.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8BE8732A02C33300D1B20C /* MyCars.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEADC0062A02C3D000CB8A9B /* MyCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEADC0052A02C3D000CB8A9B /* MyCars.swift */; };
-		FEC428E12A0395CA0061D03A /* MyTools in Frameworks */ = {isa = PBXBuildFile; productRef = FEC428E02A0395CA0061D03A /* MyTools */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,7 +17,6 @@
 		FE8BE8732A02C33300D1B20C /* MyCars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCars.h; sourceTree = "<group>"; };
 		FEADC0052A02C3D000CB8A9B /* MyCars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCars.swift; sourceTree = "<group>"; };
 		FEADC0072A02C3E900CB8A9B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		FEC428DF2A0395780061D03A /* MyTools */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyTools; path = ../MyTools; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,7 +24,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC428E12A0395CA0061D03A /* MyTools in Frameworks */,
+				FE5372B12A039C2E00E2AA89 /* MyTools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +77,6 @@
 		FEC428DE2A0395780061D03A /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				FEC428DF2A0395780061D03A /* MyTools */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -112,7 +110,7 @@
 			);
 			name = MyCars;
 			packageProductDependencies = (
-				FEC428E02A0395CA0061D03A /* MyTools */,
+				FE5372B02A039C2E00E2AA89 /* MyTools */,
 			);
 			productName = MyCars;
 			productReference = FE8BE8702A02C33300D1B20C /* MyCars.framework */;
@@ -142,6 +140,7 @@
 			);
 			mainGroup = FE8BE8662A02C33300D1B20C;
 			packageReferences = (
+				FE5372AF2A039C2E00E2AA89 /* XCRemoteSwiftPackageReference "MyTools" */,
 			);
 			productRefGroup = FE8BE8712A02C33300D1B20C /* Products */;
 			projectDirPath = "";
@@ -378,9 +377,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		FE5372AF2A039C2E00E2AA89 /* XCRemoteSwiftPackageReference "MyTools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/omnts/MyTools";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		FEC428E02A0395CA0061D03A /* MyTools */ = {
+		FE5372B02A039C2E00E2AA89 /* MyTools */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = FE5372AF2A039C2E00E2AA89 /* XCRemoteSwiftPackageReference "MyTools" */;
 			productName = MyTools;
 		};
 /* End XCSwiftPackageProductDependency section */

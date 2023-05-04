@@ -1,4 +1,5 @@
 import MyTools
+import Foundation
 
 public struct MyCars {
     public private(set) var text = "Hello, World!"
